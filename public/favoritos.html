@@ -24,21 +24,21 @@
 
     <div id="header_div_btn" class="d-flex flex-wrap gap-2 ms-auto">
 
-        <a class="header_btn" href="index.html">Home</a>
+            <a class="header_btn" href="index.html">Home</a>
 
-        <a class="header_btn" href="about.html">About</a>
+            <a class="header_btn" href="about.html">About</a>
 
-        <a class="header_btn" href="post.html">Criar Posts</a>
+            <a class="header_btn" href="post.html">Criar Posts</a>
 
-        <a class="header_btn"
+            <a class="header_btn"
 
-        id="menuFavoritos" href="favoritos.html"> Favoritos </a>
+            id="menuFavoritos" href="favoritos.html"> Favoritos </a>
 
-        <a class="header_btn" id="menuCadastro" href="cadastro_itens.html"> Cadastro </a>
+            <a class="header_btn" id="menuCadastro" href="cadastro_itens.html"> Cadastro </a>
 
-        <a class="header_btn" id="menuLogin" href="login.html"> Login </a>
+            <a class="header_btn" id="menuLogin" href="login.html"> Login </a>
 
-        <a id="menuLogout" class="header_btn" href="#" onclick="logout()"> Logout </a>
+            <a id="menuLogout" class="header_btn" href="#" onclick="logout()"> Logout </a>
 
     </div>
 
@@ -49,6 +49,8 @@
 <div id="div_flex">
 
     <main class="d-flex flex-column align-items-center">
+
+        <h2 class="mb-4">Meus Favoritos</h2>
 
     <div id="listaPosts" class="w-100"></div>
 
@@ -65,7 +67,8 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/js/favoritos.js"></script>
 <script>
-carregarPosts();
+
+carregarFavoritos();
 atualizarMenu();
 </script>
 </body>

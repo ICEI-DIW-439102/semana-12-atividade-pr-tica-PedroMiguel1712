@@ -1,18 +1,78 @@
 {
   "usuarios": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "id": "1",
+      "nome": "Administrador",
       "login": "admin",
       "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "email": "admin@email.com",
+      "admin": true
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
+      "id": "2",
+      "nome": "Pedro",
+      "login": "pedro",
       "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "email": "pedro@email.com",
+      "admin": false
+    },
+    {
+      "nome": "pedro",
+      "login": "pedrom",
+      "email": "pedro@gmail.com",
+      "senha": "123",
+      "admin": false,
+      "id": "ZUj1PwKdjxU"
+    },
+    {
+      "nome": "maria",
+      "login": "malu",
+      "email": "malu@gmail.com",
+      "senha": "123",
+      "admin": false,
+      "id": "CrgLz4wHa9E"
     }
-  ]
+  ],
+  "favoritos": [
+    {
+      "id": "1",
+      "usuario": 2,
+      "post": 1
+    }
+  ],
+  "seguidores": [
+    {
+      "seguidor": "admin",
+      "seguido": "guicmf",
+      "id": "hh2p7CTN9tI"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "usuario": "pedromiguelsd2",
+      "descricao": "Oh you're so vicious... love me then pretend you didn't",
+      "imagem": "https://picsum.photos/id/106/4912/3264",
+      "data": "2026-03-17",
+      "album": "Short n' Sweet"
+    },
+    {
+      "id": "2",
+      "usuario": "guicmf",
+      "descricao": "Talking on a seesaw...",
+      "imagem": "https://picsum.photos/id/360/3456/2304",
+      "data": "2025-12-10",
+      "album": "Emails I Can't Send"
+    },
+    {
+      "usuario": "pedrom",
+      "descricao": "'Cause i'm a busy woman...'",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MpYocMVW5FVJzD3fDgoP0yFZvUaZESNGDuKCNbXxJYFNbu34BOi5A7vGYvJ-nFuxQ2fWvdGH2HVwFUUgWlk7C8BklHK66I2oZMBmlkU7&s=10",
+      "album": "Short'n Sweet Deluxe",
+      "data": "2026-07-03",
+      "likes": 0,
+      "id": "H1SV7sDCk58"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

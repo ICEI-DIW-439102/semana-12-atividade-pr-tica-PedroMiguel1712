@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background_light);
+    color: rgb(24, 106, 117);
+    font-family: "Montserrat", sans-serif;
+    background-image: url("background_wikibrina3.jpeg");
+    background-repeat: repeat;
+    background-size: 800px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(24, 106, 117);
+}
+
+:root{
+    --accent: #72c0d9;
+    --secondary: #8fc6d8;
+    --primary: #519cb4;
+    --background: #2B2B2B;
+    --text: #121313;
+
+    --other_accent: #bd9156;
+
+    --accent_light: #72c0d9;
+    --secondary_light: #8fc6d8;
+    --primary_light: #519cb4;
+    --background_light: #f9fbfc;
+    --text_light: #0d1314;
+}
+
+aside{
+    display: block;
+    width: 5%;
+    height: 100%;
+}
+
+.svg_kiss{
+    margin-top: 300px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent);
+    padding: 10px;
+    border: 1px solid rgb(24, 106, 117);
+}
+
+#logo{
+    width: 190px;
+    height: auto;
+}
+
+#input_pesquisar{
+    flex: 1;
+    min-width: 150px;
+    max-width: 700px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #9fd4e6;
+    padding-left: 20px;
+    margin-left: 110px;
+    font-size: 14px;
+
+    border: 1px solid rgb(24, 106, 117);
+    outline: none;
+    box-shadow: none;
+}
+
+#input_pesquisar:focus,
+#input_pesquisar:active{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(24, 106, 117);
+    background-color: #9fd4e6;
+}
+
+#input_pesquisar::placeholder{
+    color: #12131381;
+}
+
+#header_div_btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto; 
+}
+
+.header_btn{
+    color: rgb(24, 106, 117);
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.header_btn:hover{
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.home #div_flex{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.home main{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    flex: 1;
+}
+
+.home #card,
+.post #card{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: var(--accent);
+    border-radius: 20px;
+    border: 1px solid rgb(24, 106, 117);
+
+    height: auto;
+}
+
+.home #l_card,
+.post #l_card{
+    width: 98%;
+    background-color: #9fd4e6;
+    border-radius: 20px;
+    border: 1px solid rgb(24, 106, 117);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.home #div_nick,
+.post #div_nick{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.home #nick_txt,
+.post #nick_txt{
+    font-size: 18px;
+    font-weight: 570;
+}
+
+.home #div_img,
+.post #div_img{
+    display: flex;
+    justify-content: center;
+}
+
+.home #img_post,
+.post #img_post{
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.home #div_desc,
+.post #div_desc{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px 10px 10px;
+}
+
+.home #desc_txt,
+.post #desc_txt{
+    margin-top: 15px;
+    width: 95%;
+    font-size: 18px;
+
+    word-wrap: break-word;
+}
+
+.post #div_desc{
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 15px;
+}
+
+.home #seguir_txt,
+.home #seguir_txt_2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login main,
+.cadastro main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.login #card,
+.cadastro #card{
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--accent);
+    border: 1px solid rgb(24, 106, 117);
+    height: 300px;
+}
+
+.cadastro #card{
+    height: auto;
+}
+
+#login_txt{
+    text-align: center;
+}
+
+#div_inputs{
+    width: 100%;
+}
+
+#input_txt{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9fd4e6;
+
+    border: 1px solid rgb(24, 106, 117);
+    outline: none;
+    box-shadow: none;
+}
+
+#input_txt:focus,
+#input_txt:active{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(24, 106, 117);
+    background-color: #9fd4e6;
+}
+
+#input_txt::placeholder{
+    color: #121313d7;
+}
+
+#div_btn{
+    display: flex;
+    justify-content: center;
+}
+
+#login_btn{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #9fd4e6;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#nt_log{
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#imagemShow{
+    width: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 10px solid #519cb4;
+}   
+
+div.card.shadow{
+    width: 50%;
+    border-radius: 25px;
+}
+
+div.container.mt-5{
+    display: flex;
+    justify-content: center;
+}
+
+
+div.card-body{
+    background-color: #9fd4e6;
+    color: rgb(24, 106, 117);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 10px solid #519cb4;
+}
+
+.post #div_img{
+    height: 65%;
+    width: 100%;
+}
+
+.post #card{
+    height: 70%;
+    width: 30%;
+}
+
+.post #img_post{
+    width: 80%;
+    height: 100%;
+}
+
+.post #div_nick{
+    height: 0%;
+}
+
+#listaMeusPosts{
+    display: flex;
+    gap: 50px;
+}
+
+#btnFavorito{
+    background-color: #72c0d9;
+    border: black;
+    color: rgb(24, 106, 117);
+}
+
+#cad_btn{
+    color: #fff3f5;
+}
+
+.about main,
+.post main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.btn-favoritar{
+    background-color: #9fd4e6;
+    border-color: none;
+    border: none;
+    width: 10%;
+    font-size: 100;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: var(--accent);
+    margin-top: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input_pesquisar{
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    #header_div_btn{
+        justify-content: center;
+    }
+
+    .header_btn{
+        font-size: 14px;
+    }
+
+    .home #nick_txt{
+        font-size: 16px;
+    }
+
+    .home #desc_txt{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo - WikiBrina</title>
+
+    <script>
+        (function () {
+            const dados = sessionStorage.getItem("usuarioLogado");
+            const usuario = dados ? JSON.parse(dados) : null;
+
+            if (!usuario || !usuario.admin) {
+                window.location.replace("index.html");
+            }
+        })();
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="cadastro">
+
+<header class="container-fluid d-flex flex-wrap align-items-center">
+
+    <img src="assets/img/logo_wikibrina.png" id="logo" alt="">
+
+    <input
+        id="input_pesquisar"
+        class="form-control flex-grow-1"
+        placeholder="Pesquisar..."
+        type="text">
+
+    <div id="header_div_btn" class="d-flex flex-wrap gap-2 ms-auto">
+
+        <a class="header_btn" href="index.html">Home</a>
+        <a class="header_btn" href="about.html">About</a>
+        <a class="header_btn" href="post.html">Posts</a>
+        <a class="header_btn" href="favoritos.html">Favoritos</a>
+        <a class="header_btn" href="#" onclick="logout()">Logout</a>
+
+    </div>
+
+</header>
+
+<div class="container mt-5">
+
+    <h2 class="mb-4 text-center">
+
+        Cadastro de Posts
+
+    </h2>
+
+    <div class="card p-4">
+
+        <input
+            id="id"
+            type="hidden">
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <label>Usuário</label>
+
+                <input
+                    id="usuario"
+                    class="form-control">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label>Álbum</label>
+
+                <input
+                    id="album"
+                    class="form-control">
+
+            </div>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>Descrição</label>
+
+            <textarea
+                id="descricao"
+                class="form-control"></textarea>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>Imagem (URL)</label>
+
+            <input
+                id="imagem"
+                class="form-control">
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <label>Data</label>
+
+                <input
+                    id="data"
+                    type="date"
+                    class="form-control">
+
+            </div>
+
+        </div>
+
+        <div class="d-flex gap-2">
+
+            <button
+                class="btn btn-success"
+                onclick="salvarPost()">
+
+                Salvar
+
+            </button>
+
+            <button
+                class="btn btn-secondary"
+                onclick="limparFormulario()">
+
+                Limpar
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <hr class="my-5">
+
+    <h3>Posts cadastrados</h3>
+
+    <table class="table table-striped mt-3">
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Usuário</th>
+
+            <th>Data</th>
+
+            <th>Álbum</th>
+            
+            <th>Editar</th>
+
+            <th>Excluir</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="tabelaPosts">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<footer class="container-fluid mt-5"></footer>
+
+<script src="assets/js/login.js"></script>
+<script src="asseys/js/crud.js"></script>
+
+<script>
+
+const usuario = usuarioLogado();
+
+if(!usuario || !usuario.admin){
+
+    alert("Acesso permitido apenas para administradores.");
+
+    window.location="index.html";
+
+}
+
+listarPosts();
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
