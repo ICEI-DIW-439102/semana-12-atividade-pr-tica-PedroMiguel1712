@@ -7,10 +7,10 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Pedro Miguel
+- Matricula: 907
+- Proposta de projeto escolhida: A proposta escolhida foi uma rede social para fãs da cantora Sabrina Carpenter!
+- Breve descrição sobre seu projeto: Uma rede social para fãs da cantora Sabrina Carpenter fazerem posts sobre as músicas ou sobre ela, com uma aba apenas para exibir proximos shows da artista, uma aba sobre o site e outra para login e cadastro
 
 **Registros do trabalho**
 
@@ -43,9 +43,10 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 ```
 
 << COLOQUE A IMAGEM DA HOME AQUI >>
+![alt text](image.png)
 
 << COLOQUE A IMAGEM DA TELA DE DETALHES AQUI >>
-
+![alt text](image-1.png)
 
 
 ## **Orientações Gerais**
